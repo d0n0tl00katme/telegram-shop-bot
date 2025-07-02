@@ -18,6 +18,8 @@ attrs==25.3.0
     # via aiohttp
 certifi==2025.6.15
     # via aiogram
+dotenv==0.9.9
+    # via telegram-shop-bot (pyproject.toml)
 frozenlist==1.7.0
     # via
     #   aiohttp
@@ -40,6 +42,8 @@ pydantic==2.11.7
     # via aiogram
 pydantic-core==2.33.2
     # via pydantic
+python-dotenv==1.1.1
+    # via dotenv
 sqlalchemy==2.0.41
     # via telegram-shop-bot (pyproject.toml)
 typing-extensions==4.14.0
