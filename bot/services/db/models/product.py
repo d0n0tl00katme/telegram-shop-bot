@@ -68,7 +68,6 @@ class PodSystem(Product):
 
     id: Mapped[int] = mapped_column(ForeignKey("products.id"), primary_key=True)
     name: Mapped[str] = mapped_column(String, nullable=False)
-    price: Mapped[Decimal] = mapped_column(Numeric(10, 2), nullable=False)
 
     __mapper_args__ = {"polymorphic_identity": "podsystem"}
 
