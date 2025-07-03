@@ -1,5 +1,6 @@
 from sqlalchemy.ext.asyncio import create_async_engine
 from sqlalchemy.orm import DeclarativeBase
+from .models import Base
 from sqlalchemy.ext.asyncio import async_sessionmaker
 from dotenv import load_dotenv
 import os
@@ -12,10 +13,6 @@ engine = create_async_engine(
 )
 
 SessionLocal = async_sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
-
-class Base(DeclarativeBase):
-    pass
 
 
 async def init_db():
